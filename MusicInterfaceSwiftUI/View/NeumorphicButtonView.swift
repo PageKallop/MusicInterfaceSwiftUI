@@ -13,10 +13,12 @@ struct NeumorphicButtonView: View {
     
     private var systemName: String
     private var onTap: () -> Void
+    private var size: CGSize
     
-    init(systemName: String, onTap: @escaping () -> Void) {
+    init(systemName: String, size: CGSize = CGSize(width: 60, height: 60), onTap: @escaping () -> Void) {
         self.systemName = systemName
         self.onTap = onTap
+        self.size = size
     }
     
     var gray: Color {
@@ -39,10 +41,10 @@ struct NeumorphicButtonView: View {
             }
             
         }){
-            Image(systemName: "heart.fill")
+            Image(systemName: self.systemName)
                 .resizable()
-                .frame(width: 60, height: 60)
-                .padding(30)
+                .frame(width: self.size.width, height: self.size.height)
+                .padding(20)
                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
         }.clipShape(Circle())
