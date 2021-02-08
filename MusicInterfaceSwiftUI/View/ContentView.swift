@@ -83,7 +83,7 @@ struct ContentView: View {
             
             
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
+        .background(Color(#colorLiteral(red: 0.8166052699, green: 0.8448793292, blue: 0.9289778471, alpha: 1)))
         .edgesIgnoringSafeArea(.all)
     }
 }

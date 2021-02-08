@@ -22,7 +22,7 @@ struct NeumorphicButtonView: View {
     }
     
     var gray: Color {
-        return Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+        return Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
     }
     
     var white: Color{
@@ -46,7 +46,7 @@ struct NeumorphicButtonView: View {
                 .frame(width: self.size.width, height: self.size.height)
                 .padding(20)
 //                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.871060133, green: 0.9087772369, blue: 1, alpha: 1)))
         }.clipShape(Circle())
         .shadow(color: self.isPressed ? white : gray, radius: self.isPressed ? 4 : 8, x: 8, y: 8)
        .shadow(color: self.isPressed ? white : gray, radius: self.isPressed ? 4 : 8, x: -1, y: -1)
